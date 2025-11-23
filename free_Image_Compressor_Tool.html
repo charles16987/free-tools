@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- ⭐ SEO TITLE ⭐ -->
+  <title>Free Image Compressor – Reduce Image Size Without Losing Quality</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/code.png" />
+  <!-- ⭐ SEO DESCRIPTION ⭐ -->
+  <meta name="description" content="Free Image Compressor tool to reduce image size without losing quality. Compress JPG, PNG, WEBP images instantly. Fast, secure, no signup required.">
+
+  <!-- ⭐ KEYWORDS (optional) ⭐ -->
+  <meta name="keywords" content="image compressor, compress jpg, compress png, reduce image size online, free image tools, webp compressor">
+
+  <!-- ⭐ CANONICAL URL ⭐ -->
+  <link rel="canonical" href="#">
+
+  <!-- ⭐ OPEN GRAPH / META IMAGE ⭐ -->
+  <meta property="og:title" content="Free Image Compressor – Reduce Image Size Fast">
+  <meta property="og:description" content="Compress your images instantly without losing quality. 100% free tool — JPG, PNG, WEBP supported.">
+  <meta property="og:image" content="#">
+  <meta property="og:url" content="#">
+  <meta property="og:type" content="website">
+
+  <!-- ⭐ TWITTER CARD ⭐ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Image Compressor">
+  <meta name="twitter:description" content="Reduce image size online without quality loss. Free, fast & secure.">
+  <meta name="twitter:image" content="#">
+
+  <!-- ⭐ BOOTSTRAP ⭐ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ⭐ STYLES ⭐ -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+
+
+<body>
+
+  <!-- ⭐ NAVBAR ⭐ -->
+   <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand fw-bold">Free Tools</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+
+        <!-- CENTER -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item mx-2"><a href="index.html" class="nav-link active menu-click">Free Tools</a></li>
+          <li class="nav-item mx-2"><a href="about.html" class="nav-link menu-click">About</a></li>
+          <li class="nav-item mx-2"><a href="blog.html" class="nav-link menu-click">Blog</a></li>
+        </ul>
+
+        <!-- RIGHT -->
+        <div>
+          <a href="contact.html" class="btn btn-outline-light menu-click">Contact Us</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+   </div>
+  
+
+  <!-- ⭐ TOAST ⭐ -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+    <div id="liveToast" class="toast bg-dark text-white border-0" role="alert">
+      <div class="toast-body" id="toastMsg">Action completed</div>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+     <div class="text-center mb-5">
+         <h1 class="fw-bold">Free Image Compressor</h1>
+    <p class="text-muted">Upload up to <strong>10 images</strong>. Compress individually or compress all.</p>
+     </div>
+   
+
+    <div class="row g-3 align-items-end mb-3">
+      <div class="col-md-6">
+        <label class="form-label">Choose images (max 10)</label>
+        <input id="fileInput" class="form-control" type="file" accept="image/*" multiple>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Compression quality</label>
+        <input id="globalQuality" type="range" class="form-range" min="10" max="100" value="80">
+        <div class="d-flex justify-content-between">
+          <small class="text-muted">10</small>
+          <small id="qualityVal" class="text-muted">80</small>
+          <small class="text-muted">100</small>
+        </div>
+      </div>
+
+      <div class="col-md-12 text-center mt-4">
+        <button id="compressAllBtn" class="btn btn-primary">Compress All</button>
+        <button id="downloadAllBtn" class="btn btn-success" disabled>Download All (ZIP)</button>
+      </div>
+    </div>
+
+    <div id="gallery" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"></div>
+
+     <!-- ⭐ HOW TO USE – SIMPLE GUIDE ⭐ -->
+<div class="mt-5">
+  <h2 class="fw-bold">How to Use This Image Compressor</h2>
+  <p>This tool is very simple to use, even if you are not a technical person. 
+     Follow these steps:</p>
+
+  <ol>
+    <li>Click the <strong>Choose Images</strong> button and select up to 10 photos.</li>
+    <li>Adjust the <strong>quality slider</strong> (lower = more compression, higher = better quality).</li>
+    <li>Click <strong>Compress</strong> for each image or use <strong>Compress All</strong>.</li>
+    <li>Download your compressed images one by one or download everything as a <strong>ZIP file</strong>.</li>
+  </ol>
+</div>
+
+<!-- ⭐ WHY THIS TOOL IS USEFUL ⭐ -->
+<div class="mt-5">
+  <h2 class="fw-bold">What Is This Tool Used For?</h2>
+  <p>This free image compressor helps reduce file size without losing much quality. 
+     It is useful when you want to upload images quickly or save storage space.</p>
+
+  <ul>
+    <li>To upload photos faster on websites</li>
+    <li>To reduce image size for online forms</li>
+    <li>To send pictures easily on WhatsApp or Email</li>
+    <li>To make your website load faster with small images</li>
+    <li>To save mobile and laptop storage</li>
+  </ul>
+</div>
+
+<!-- ⭐ BENEFITS – WHY PEOPLE USE THIS TOOL ⭐ -->
+<div class="mt-5">
+  <h2 class="fw-bold">Why Should You Use This Tool?</h2>
+  <p>This tool is created to make your work faster and easier. It has many benefits:</p>
+
+  <ul>
+    <li>100% free to use</li>
+    <li>No watermark, no signup</li>
+    <li>Compress up to 10 images at once</li>
+    <li>Fast processing in your browser</li>
+    <li>Your images are never uploaded or stored on any server</li>
+    <li>Works on mobile, tablet, and laptop</li>
+  </ul>
+</div>
+
+<!-- ⭐ WHO CAN USE THIS TOOL ⭐ -->
+<div class="mt-5">
+  <h2 class="fw-bold">Who Can Use This Tool?</h2>
+  <p>This tool is helpful for everyone:</p>
+
+  <ul>
+    <li><strong>Students</strong> – for project images</li>
+    <li><strong>Web designers</strong> – for optimized website photos</li>
+    <li><strong>Photographers</strong> – to share small-size images</li>
+    <li><strong>Business owners</strong> – to upload product photos</li>
+    <li><strong>YouTubers</strong> – for thumbnail compression</li>
+    <li><strong>Bloggers</strong> – to improve page loading speed</li>
+  </ul>
+
+  <p>This tool makes your work simple, fast, and stress-free.</p>
+</div>
+
+   <!-- ⭐ SIMPLE FOOTER ⭐ -->
+<footer class="text-center py-3 mt-5" style="font-size: 14px; color: #555;">
+  <p class="mb-0">
+    © <span id="year"></span> All Rights Reserved • 
+    Designed by 
+    <a href="https://charleswebdesigner.netlify.app/" target="_blank" 
+       style="color:#007bff;">
+      Charles
+    </a>
+  </p>
+</footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script>
+   document.getElementById("year").innerText = new Date().getFullYear();
+</script>
+ <script>
+
+  /* -----------------------
+       ⭐ TOAST FUNCTION
+  -------------------------*/
+  function showToast(msg) {
+    document.getElementById("toastMsg").innerText = msg;
+    const toast = new bootstrap.Toast(document.getElementById("liveToast"), { delay: 1500 });
+    toast.show();
+  }
+
+  document.querySelectorAll(".menu-click").forEach(btn => {
+    btn.addEventListener("click", () => showToast("Menu clicked"));
+  });
+
+  /* -----------------------
+       ⭐ MAIN VARIABLES
+  -------------------------*/
+
+  const fileInput = document.getElementById('fileInput');
+  const gallery = document.getElementById('gallery');
+  const compressAllBtn = document.getElementById('compressAllBtn');
+  const downloadAllBtn = document.getElementById('downloadAllBtn');
+  const globalQuality = document.getElementById('globalQuality');
+  const qualityVal = document.getElementById('qualityVal');
+
+  let items = [];
+
+  function humanFileSize(bytes) {
+    if (bytes === 0) return '0 B';
+    const i = Math.floor(Math.log(bytes) / Math.log(1024));
+    const sizes = ['B', 'KB', 'MB', 'GB', 'TB'];
+    return (bytes / Math.pow(1024, i)).toFixed(2) + ' ' + sizes[i];
+  }
+
+  qualityVal.textContent = globalQuality.value;
+  globalQuality.addEventListener('input', () => qualityVal.textContent = globalQuality.value);
+
+  /* -----------------------
+       ⭐ FILE UPLOAD
+  -------------------------*/
+  fileInput.addEventListener('change', (e) => {
+    gallery.innerHTML = '';
+    items = [];
+
+    const files = Array.from(e.target.files).slice(0, 10);
+
+    for (const file of files) {
+      if (!file.type.startsWith("image/")) continue;
+
+      const url = URL.createObjectURL(file);
+      const name = file.name.replace(/\s+/g, "_");
+
+      const card = createCard(name, url, file);
+      gallery.appendChild(card);
+
+      items.push({
+        file,
+        url,
+        name,
+        originalSize: file.size,
+        compressedBlob: null,
+        compressedUrl: null
+      });
+    }
+
+    downloadAllBtn.disabled = true;
+    showToast("Images loaded");
+  });
+
+  /* -----------------------
+       ⭐ CREATE CARD
+  -------------------------*/
+  function createCard(name, url, file) {
+    const col = document.createElement('div');
+    col.className = "col";
+
+    const card = document.createElement('div');
+    card.className = "card card-small h-100";
+
+    card.innerHTML = `
+      <div class="card-body d-flex flex-column">
+        <img src="${url}" class="preview-img mb-2">
+
+        <h6 class="card-title mb-1 text-truncate">${name}</h6>
+        <p class="size-note mb-1">Original: <strong>${humanFileSize(file.size)}</strong></p>
+
+        <input type="range" class="form-range per-quality mb-2" min="10" max="100" value="80">
+
+        <div class="d-flex gap-2 mt-auto">
+          <button class="btn btn-sm btn-outline-primary compress-btn">Compress</button>
+          <a class="btn btn-sm btn-outline-success download-btn" style="display:none" download>Download</a>
+          <button class="btn btn-sm btn-outline-secondary view-btn">View</button>
+        </div>
+
+        <div class="mt-2 small text-muted result-info"></div>
+      </div>
+    `;
+
+    col.appendChild(card);
+
+    const compressBtn = card.querySelector(".compress-btn");
+    const downloadBtn = card.querySelector(".download-btn");
+    const viewBtn = card.querySelector(".view-btn");
+    const qSlider = card.querySelector(".per-quality");
+    const resultInfo = card.querySelector(".result-info");
+
+    /* ⭐ Individual Compress */
+    compressBtn.addEventListener('click', async () => {
+      const index = Array.from(gallery.children).indexOf(col);
+      const item = items[index];
+
+      const q = Number(qSlider.value) / 100;
+      const blob = await compressImage(item.file, q);
+
+      item.compressedBlob = blob;
+      item.compressedUrl = URL.createObjectURL(blob);
+
+      downloadBtn.href = item.compressedUrl;
+      downloadBtn.download = item.name.replace(/\.[^/.]+$/, "") + "-compressed.jpg";
+      downloadBtn.style.display = "inline-block";
+
+      resultInfo.innerHTML = `Compressed: <strong>${humanFileSize(blob.size)}</strong>`;
+
+      showToast("Image compressed");
+      downloadAllBtn.disabled = false;
+    });
+
+    /* ⭐ View Image */
+    viewBtn.addEventListener("click", () => {
+      const index = Array.from(gallery.children).indexOf(col);
+      const item = items[index];
+      window.open(item.compressedUrl || item.url, "_blank");
+      showToast("Image viewed");
+    });
+
+    return col;
+  }
+
+  /* -----------------------
+       ⭐ COMPRESS FUNCTION
+  -------------------------*/
+  async function compressImage(file, quality = 0.8) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+
+      img.onload = () => {
+
+        const maxDim = 1920;
+        let w = img.width,
+            h = img.height;
+
+        if (Math.max(w, h) > maxDim) {
+          const ratio = maxDim / Math.max(w, h);
+          w = Math.round(w * ratio);
+          h = Math.round(h * ratio);
+        }
+
+        const canvas = document.createElement("canvas");
+        canvas.width = w;
+        canvas.height = h;
+        canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+
+        canvas.toBlob((blob) => resolve(blob), "image/jpeg", quality);
+      };
+
+      img.onerror = reject;
+      img.src = URL.createObjectURL(file);
+    });
+  }
+
+  /* -----------------------
+      ⭐ COMPRESS ALL  (FIXED)
+  -------------------------*/
+  compressAllBtn.addEventListener("click", async () => {
+    if (!items.length) {
+      showToast("No images uploaded");
+      return;
+    }
+
+    showToast("Compressing all images...");
+
+    const q = Number(globalQuality.value) / 100;
+
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+
+      // ⭐ ALWAYS RECOMPRESS (IMPORTANT FIX)
+      const blob = await compressImage(item.file, q);
+
+      item.compressedBlob = blob;
+      item.compressedUrl = URL.createObjectURL(blob);
+
+      const card = gallery.children[i];
+      const downloadBtn = card.querySelector(".download-btn");
+      const resultInfo = card.querySelector(".result-info");
+
+      /* ⭐ NEW FIX — Update card slider to global percentage */
+      const perSlider = card.querySelector(".per-quality");
+      perSlider.value = globalQuality.value;
+
+      downloadBtn.href = item.compressedUrl;
+      downloadBtn.download = item.name.replace(/\.[^/.]+$/, "") + "-compressed.jpg";
+      downloadBtn.style.display = "inline-block";
+
+      resultInfo.innerHTML = `Compressed: <strong>${humanFileSize(blob.size)}</strong>`;
+    }
+
+    downloadAllBtn.disabled = false;
+    showToast("All images compressed");
+  });
+
+  /* -----------------------
+       ⭐ DOWNLOAD ZIP
+  -------------------------*/
+  downloadAllBtn.addEventListener("click", async () => {
+    const zip = new JSZip();
+    let hasFiles = false;
+
+    for (let item of items) {
+      if (item.compressedBlob) {
+        hasFiles = true;
+        const filename = item.name.replace(/\.[^/.]+$/, "") + "-compressed.jpg";
+        zip.file(filename, item.compressedBlob);
+      }
+    }
+
+    if (!hasFiles) {
+      showToast("No compressed files found");
+      return;
+    }
+
+    const blob = await zip.generateAsync({ type: "blob" });
+    saveAs(blob, "images-compressed.zip");
+
+    showToast("ZIP downloaded");
+  });
+
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
