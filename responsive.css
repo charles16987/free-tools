@@ -13,6 +13,8 @@
 }
 
  @media (max-width: 767px) {
-    
+    .navbar-collapse div {
+        text-align: center;
+    }
 }
 	
