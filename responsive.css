@@ -16,5 +16,11 @@
     .navbar-collapse div {
         text-align: center;
     }
+    .navbar.navbar-expand-lg {
+    width: 94%;
+}
+.container.pt-5 {
+    padding-top: 100px !important;
+}
 }
 	

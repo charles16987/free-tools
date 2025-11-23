@@ -32,3 +32,15 @@
     nav {
       margin-bottom: 25px;
     }
+    .navbar.navbar-expand-lg {
+         position: fixed;
+top: 15px;
+left: 0;
+right: 0;
+width: 90%;
+margin: 0 auto;
+z-index: 10000;
+    }
+    .container.pt-5 {
+        padding-top: 130px !important;
+    }
