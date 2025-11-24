@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- ⭐ SEO TITLE ⭐ -->
+  <title>PNG to JPG Converter – Free Online Tool</title>
+  <meta name="description"
+    content="Convert PNG images to JPG instantly in browser. Free online PNG to JPG converter. No signup needed. Download all images or individually.">
+<!-- ⭐ META KEYWORDS -->
+  <meta name="keywords" 
+    content="free tools, image compressor, PNG to JPG, JPG to PNG, image resizer, pdf compressor, online tools, photo tools, file converter">
+
+  <!-- ⭐ CANONICAL URL -->
+  <link rel="canonical" href="#">
+
+  <!-- ⭐ OPEN GRAPH (FACEBOOK / LINKEDIN) -->
+  <meta property="og:title" content="PNG to JPG Converter – Free Online Tool">
+  <meta property="og:description" content="Convert PNG images to JPG instantly in browser. Free online PNG to JPG converter. No signup needed. Download all images or individually.">
+  <meta property="og:image" content="#"> 
+  <meta property="og:url" content="#">
+  <meta property="og:type" content="website">
+
+  <!-- ⭐ TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PNG to JPG Converter – Free Online Tool">
+  <meta name="twitter:description" content="Convert PNG images to JPG instantly in browser. Free online PNG to JPG converter. No signup needed. Download all images or individually.">
+  <meta name="twitter:image" content="">
+
+  <!-- ⭐ FAVICON -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/code.png" />
+  <!-- ⭐ BOOTSTRAP & STYLES ⭐ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+
+  <!-- JSZip & FileSaver -->
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJM3N257C3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJM3N257C3');
+</script>
+</head>
+
+<body>
+
+  <!-- ⭐ NAVBAR ⭐ -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand fw-bold">Free Tools</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item mx-2"><a href="index.html" class="nav-link menu-click">Free Tools</a></li>
+            <li class="nav-item mx-2"><a href="about.html" class="nav-link menu-click">About</a></li>
+            <li class="nav-item mx-2"><a href="blog.html" class="nav-link menu-click">Blog</a></li>
+          </ul>
+          <div>
+            <a href="contact.html" class="btn btn-outline-light menu-click">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ⭐ MAIN CONTENT ⭐ -->
+  <div class="container pt-5">
+
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">PNG to JPG Converter</h1>
+      <p class="text-muted">Upload up to <strong>10 PNG images</strong> and convert them to JPG.</p>
+    </div>
+
+    <!-- ⭐ TOOL CARD ⭐ -->
+    <div class="card p-4 shadow-sm">
+      <h4 class="fw-bold mb-3 text-center">Upload Your PNG Images</h4>
+      <div class="text-center mb-3">
+        <input type="file" id="fileInput" class="form-control mb-3" accept="image/png" multiple>
+        <button class="btn btn-primary" id="convertBtn">Convert to JPG</button>
+        <button class="btn btn-success" id="downloadAllBtn" disabled>Download All as ZIP</button>
+      </div>
+
+      <div id="gallery" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-3"></div>
+    </div>
+
+    <!-- ⭐ HOW TO USE THIS TOOL ⭐ -->
+    <div class="mt-5">
+      <h2 class="fw-bold">How to Use This PNG to JPG Converter</h2>
+      <ol>
+        <li>Click the <strong>Choose Images</strong> button and select up to 10 PNG files.</li>
+        <li>Click the <strong>Convert to JPG</strong> button to generate JPG images.</li>
+        <li>Preview the images in the gallery.</li>
+        <li>Click the <strong>Download JPG</strong> button under each image to download individually.</li>
+        <li>Or click <strong>Download All as ZIP</strong> to download all converted images at once.</li>
+      </ol>
+    </div>
+
+    <!-- ⭐ WHAT IS THIS TOOL USED FOR ⭐ -->
+    <div class="mt-5">
+      <h2 class="fw-bold">What Is This Tool Used For?</h2>
+      <p>This PNG to JPG converter is perfect for anyone who wants to reduce image file size or convert files for compatibility. It is useful for:</p>
+      <ul>
+        <li>Bloggers and website owners who need smaller images for faster loading</li>
+        <li>Students and professionals submitting images for reports or assignments</li>
+        <li>Designers who need JPG format for editing or publishing</li>
+        <li>Sharing images easily via email, WhatsApp, or social media</li>
+      </ul>
+    </div>
+
+    <!-- ⭐ WHY SHOULD YOU USE THIS TOOL ⭐ -->
+    <div class="mt-5 mb-5">
+      <h2 class="fw-bold">Why Should You Use This Tool?</h2>
+      <ul>
+        <li>100% free to use, no sign-up required</li>
+        <li>Convert multiple PNG images quickly (up to 10)</li>
+        <li>Preview images before downloading</li>
+        <li>Download images individually or all at once as a ZIP</li>
+        <li>Fast and secure, fully client-side in your browser</li>
+        <li>Works on mobile, tablet, and desktop</li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- ⭐ FOOTER ⭐ -->
+  <footer class="text-center py-3 mt-5" style="font-size: 14px; color: #555;">
+    <p class="mb-0">
+      © <span id="year"></span> All Rights Reserved • 
+      Designed by 
+      <a href="https://charleswebdesigner.netlify.app/" target="_blank" style="color:#007bff;">
+        Charles
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+    const fileInput = document.getElementById('fileInput');
+    const convertBtn = document.getElementById('convertBtn');
+    const downloadAllBtn = document.getElementById('downloadAllBtn');
+    const gallery = document.getElementById('gallery');
+
+    let convertedImages = [];
+
+    convertBtn.addEventListener('click', () => {
+      gallery.innerHTML = '';
+      convertedImages = [];
+      downloadAllBtn.disabled = true;
+
+      const files = Array.from(fileInput.files).slice(0, 10);
+      if (!files.length) {
+        alert("Please select PNG images (max 10)");
+        return;
+      }
+
+      files.forEach(file => {
+        if (!file.type.includes('png')) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.src = e.target.result;
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+
+            canvas.toBlob(blob => {
+              const url = URL.createObjectURL(blob);
+              convertedImages.push({ blob, name: file.name.replace('.png', '.jpg') });
+
+              const col = document.createElement('div');
+              col.className = "col";
+              col.innerHTML = `
+                <div class="card h-100 text-center p-3">
+                  <img src="${url}" class="mb-2" style="max-height:150px; object-fit:contain;">
+                  <a href="${url}" download="${file.name.replace('.png','.jpg')}" class="btn btn-success btn-sm">Download JPG</a>
+                </div>
+              `;
+              gallery.appendChild(col);
+
+              if (convertedImages.length === files.length) {
+                downloadAllBtn.disabled = false;
+              }
+
+            }, 'image/jpeg', 0.95);
+          }
+        }
+        reader.readAsDataURL(file);
+      });
+    });
+
+    // ⭐ Download All as ZIP
+    downloadAllBtn.addEventListener('click', async () => {
+      if (!convertedImages.length) return;
+      const zip = new JSZip();
+      convertedImages.forEach(img => {
+        zip.file(img.name, img.blob);
+      });
+      const blob = await zip.generateAsync({ type: 'blob' });
+      saveAs(blob, 'converted-images.zip');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
