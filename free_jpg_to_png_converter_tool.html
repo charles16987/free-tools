@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- ⭐ SEO TITLE ⭐ -->
+  <title>JPG to PNG Converter – Free Online Tool</title>
+  <meta name="description"
+    content="Convert JPG images to PNG instantly in browser. Free online JPG to PNG converter. No signup needed.">
+
+  <!-- ⭐ META KEYWORDS -->
+  <meta name="keywords"
+    content="jpg to png, image converter, free tools, png converter, file converter, photo tools">
+
+  <!-- ⭐ CANONICAL URL -->
+  <link rel="canonical" href="#">
+
+  <!-- ⭐ OPEN GRAPH -->
+  <meta property="og:title" content="JPG to PNG Converter – Free Online Tool">
+  <meta property="og:description"
+    content="Convert JPG images to PNG instantly. Download all images or individually.">
+  <meta property="og:image" content="#">
+  <meta property="og:url" content="#">
+  <meta property="og:type" content="website">
+
+  <!-- ⭐ TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ⭐ FAVICON -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/code.png" />
+
+  <!-- ⭐ BOOTSTRAP & CSS ⭐ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+
+  <!-- JSZip & FileSaver -->
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJM3N257C3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJM3N257C3');
+</script>
+</head>
+
+<body>
+
+  <!-- ⭐ NAVBAR ⭐ -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand fw-bold">Free Tools</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item mx-2"><a href="index.html" class="nav-link">Free Tools</a></li>
+            <li class="nav-item mx-2"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item mx-2"><a href="blog.html" class="nav-link">Blog</a></li>
+          </ul>
+          <div>
+            <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ⭐ MAIN CONTENT ⭐ -->
+  <div class="container pt-5">
+
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">JPG to PNG Converter</h1>
+      <p class="text-muted">Upload up to <strong>10 JPG images</strong> and convert them to PNG.</p>
+    </div>
+
+    <!-- ⭐ TOOL CARD ⭐ -->
+    <div class="card p-4 shadow-sm">
+      <h4 class="fw-bold mb-3 text-center">Upload Your JPG Images</h4>
+      <div class="text-center mb-3">
+        <input type="file" id="fileInput" class="form-control mb-3" accept="image/jpeg" multiple>
+        <button class="btn btn-primary" id="convertBtn">Convert to PNG</button>
+        <button class="btn btn-success" id="downloadAllBtn" disabled>Download All as ZIP</button>
+      </div>
+
+      <div id="gallery" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mt-3"></div>
+    </div>
+
+    <!-- ⭐ HOW TO USE ⭐ -->
+    <div class="mt-5">
+      <h2 class="fw-bold">How to Use This JPG to PNG Converter</h2>
+      <ol>
+        <li>Select up to 10 JPG files.</li>
+        <li>Click <strong>Convert to PNG</strong>.</li>
+        <li>Preview your converted images.</li>
+        <li>Download individually or download all as ZIP.</li>
+      </ol>
+    </div>
+
+    <!-- ⭐ USE CASES ⭐ -->
+    <div class="mt-5">
+      <h2 class="fw-bold">Why Convert JPG to PNG?</h2>
+      <ul>
+        <li>Keep transparent background</li>
+        <li>Better quality for editing</li>
+        <li>Upload to websites requiring PNG</li>
+        <li>Use in designs, projects, or presentations</li>
+      </ul>
+    </div>
+    <div class="mt-5">
+  <h2 class="fw-bold">What Is JPG to PNG Conversion?</h2>
+  <p>
+    JPG to PNG conversion means changing an image from the JPG (or JPEG) format to the PNG format. JPG is a 
+    highly compressed format and is used for photographs, social media images, and general pictures. PNG 
+    is a high-quality image format that supports transparency, sharper details, and better editing quality.
+  </p>
+  <p>
+    When you convert JPG to PNG using our free online tool, there is no quality loss. The conversion 
+    happens directly in your browser, ensuring safety, privacy, and fast performance. You can upload up to 
+    10 images at a time and download them individually or as a ZIP file.
+  </p>
+</div>
+<div class="mt-5">
+  <h2 class="fw-bold">Benefits of Converting JPG to PNG</h2>
+  <ul>
+    <li><strong>Supports Transparency:</strong> PNG images allow transparent backgrounds, perfect for logos and graphics.</li>
+    <li><strong>Sharper Details:</strong> PNG is a lossless format, meaning the image stays high quality.</li>
+    <li><strong>Better for Editing:</strong> Designers and editors prefer PNG for Adobe Photoshop, Canva, and other tools.</li>
+    <li><strong>Perfect for Web & Print:</strong> PNG format is widely accepted in websites, apps, and print media.</li>
+    <li><strong>Ideal for E-commerce:</strong> Product images with transparent background look more professional.</li>
+  </ul>
+</div>
+<div class="mt-5">
+  <h2 class="fw-bold">Features of Our JPG to PNG Converter Tool</h2>
+  <ul>
+    <li>Convert up to 10 JPG images at once</li>
+    <li>100% free browser-based tool — no software required</li>
+    <li>Fast image processing with high-quality results</li>
+    <li>Secure conversion — images never leave your device</li>
+    <li>Download PNG images individually or all as ZIP</li>
+    <li>Works smoothly on mobile, desktop, and tablets</li>
+    <li>No watermark added to your images</li>
+  </ul>
+</div>
+<div class="mt-5">
+  <h2 class="fw-bold">Why Choose Our Online JPG to PNG Converter?</h2>
+  <p>
+    There are many image converter websites online, but most of them are slow, filled with ads, or 
+    require sign-up. Our tool is simple, fast, and user-friendly. You can convert JPG to PNG with just 
+    one click, and the entire process is handled inside your browser using JavaScript.
+  </p>
+  <p>
+    This means your images are never uploaded to any server, ensuring complete privacy and security. 
+    Whether you are a student, photographer, graphic designer, or website owner, this JPG to PNG converter 
+    helps you produce clean, transparent, and high-quality PNG files instantly.
+  </p>
+</div>
+<div class="mt-5">
+  <h2 class="fw-bold">Who Can Use This JPG to PNG Converter?</h2>
+  <ul>
+    <li>Students preparing assignments or design projects</li>
+    <li>Graphic designers who need transparent PNG images</li>
+    <li>Photographers enhancing high-quality images</li>
+    <li>Bloggers compressing or converting images for the web</li>
+    <li>Developers and UI/UX designers using PNG for icons</li>
+    <li>E-commerce sellers who need product images without background</li>
+    <li>Social media content creators making thumbnails and posts</li>
+  </ul>
+</div>
+<div class="mt-5">
+  <h2 class="fw-bold">Frequently Asked Questions (FAQ)</h2>
+
+  <h4>1. Is this JPG to PNG converter free?</h4>
+  <p>Yes, this tool is 100% free and works without login or charges.</p>
+
+  <h4>2. Can I convert multiple JPG files at once?</h4>
+  <p>Yes, you can upload and convert up to 10 JPG files in one click.</p>
+
+  <h4>3. Does the tool reduce image quality?</h4>
+  <p>No, the PNG format maintains high quality with lossless compression.</p>
+
+  <h4>4. Will my images be stored or uploaded?</h4>
+  <p>No, everything happens in your browser. Your images are not saved on any server.</p>
+
+  <h4>5. Can I convert JPG images with transparent background?</h4>
+  <p>JPG does not support transparency, but PNG does. After converting, you can edit transparency using a photo editor.</p>
+</div>
+
+
+
+  </div>
+
+  <!-- ⭐ FOOTER ⭐ -->
+  <footer class="text-center py-3 mt-5" style="font-size: 14px; color: #555;">
+    <p class="mb-0">
+      © <span id="year"></span> All Rights Reserved • 
+      Designed by 
+      <a href="https://charleswebdesigner.netlify.app/" target="_blank" style="color:#007bff;">
+        Charles
+      </a>
+    </p>
+  </footer>
+
+  <!-- ⭐ SCRIPT ⭐ -->
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+    const fileInput = document.getElementById('fileInput');
+    const convertBtn = document.getElementById('convertBtn');
+    const downloadAllBtn = document.getElementById('downloadAllBtn');
+    const gallery = document.getElementById('gallery');
+
+    let convertedImages = [];
+
+    convertBtn.addEventListener('click', () => {
+      gallery.innerHTML = '';
+      convertedImages = [];
+      downloadAllBtn.disabled = true;
+
+      const files = Array.from(fileInput.files).slice(0, 10);
+      if (!files.length) {
+        alert("Please select JPG images (max 10)");
+        return;
+      }
+
+      files.forEach(file => {
+        if (!file.type.includes('jpeg') && !file.type.includes('jpg')) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.src = e.target.result;
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+
+            canvas.toBlob(blob => {
+              const url = URL.createObjectURL(blob);
+              const newName = file.name.replace(/\.jpg|\.jpeg/i, '.png');
+              convertedImages.push({ blob, name: newName });
+
+              const col = document.createElement('div');
+              col.className = "col";
+              col.innerHTML = `
+                <div class="card h-100 text-center p-3">
+                  <img src="${url}" class="mb-2" style="max-height:150px; object-fit:contain;">
+                  <a href="${url}" download="${newName}" class="btn btn-success btn-sm">Download PNG</a>
+                </div>
+              `;
+              gallery.appendChild(col);
+
+              if (convertedImages.length === files.length) {
+                downloadAllBtn.disabled = false;
+              }
+
+            }, 'image/png');
+          }
+        }
+        reader.readAsDataURL(file);
+      });
+    });
+
+    // ⭐ ZIP DOWNLOAD
+    downloadAllBtn.addEventListener('click', async () => {
+      if (!convertedImages.length) return;
+      const zip = new JSZip();
+      convertedImages.forEach(img => {
+        zip.file(img.name, img.blob);
+      });
+      const blob = await zip.generateAsync({ type: 'blob' });
+      saveAs(blob, 'converted-png-images.zip');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
