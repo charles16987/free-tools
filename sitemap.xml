@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/about</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/blog</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/contact</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/free_image_compressor_tool</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/free_png_to_jpg_converter_tool</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/free_jpg_to_png_converter_tool</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freeonlinetoolsbox.netlify.app/free_image_crop_resize_tool.html</loc>
+  <lastmod>2025-11-26T02:56:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>

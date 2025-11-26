@@ -1,0 +1,6 @@
+# Allow all robots full access
+User-agent: *
+Disallow:
+
+# Sitemap location
+Sitemap: https://freeonlinetoolsbox.netlify.app/sitemap.xml

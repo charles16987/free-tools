@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Image Crop & Resize Tool – Free Online</title>
+  <meta name="description"
+    content="Free online image crop and resize tool. Upload 1 image, crop, resize, preview and download instantly. 100% browser-based, no watermark.">
+  <meta name="keywords"
+    content="image cropper, resize image online, free tools, image editor, crop image, photo crop, image resize">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/code.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CropperJS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+
+  <style>
+    /* FIXED EDITOR BOX */
+    .editor-box {
+      width: 400px;
+      height: 400px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin: auto;
+      overflow: hidden;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #editor-img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+
+    /* PREVIEW IMAGE */
+    #preview-box img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /* MAKE CROP HANDLES BIGGER */
+    .cropper-point {
+      height: 16px !important;
+      width: 16px !important;
+      background-color: #007bff !important;
+      opacity: 1 !important;
+    }
+
+    .cropper-line {
+      background-color: #007bff !important;
+    }
+
+    @media (max-width: 767px) {
+      .editor-box {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJM3N257C3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJM3N257C3');
+</script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mt-3">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand fw-bold">Free Tools</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item mx-2"><a href="index.html" class="nav-link">Free Tools</a></li>
+            <li class="nav-item mx-2"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item mx-2"><a href="blog.html" class="nav-link">Blog</a></li>
+          </ul>
+          <div>
+            <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- MAIN TOOL -->
+  <div class="container pt-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Image Crop & Resize Tool</h1>
+      <p class="text-muted">Upload → Edit → Live Preview → Download</p>
+    </div>
+
+    <div class="card p-4 shadow-sm">
+
+      <div class="row">
+
+        <!-- LEFT - EDITOR -->
+        <div class="col-md-6">
+          <h4 class="fw-bold mb-3">Edit Image</h4>
+
+          <input type="file" id="imageUpload" class="form-control mb-3" accept="image/*">
+
+          <div class="editor-box">
+            <img id="editor-img" style="display:none;">
+          </div>
+
+          <!-- Resize Inputs -->
+          <div class="row mt-3">
+            <div class="col-md-4 d-none">
+              <input type="number" id="widthInput" class="form-control" placeholder="Width (px)">
+            </div>
+            <div class="col-md-4 d-none">
+              <input type="number" id="heightInput" class="form-control" placeholder="Height (px)">
+            </div>
+            <div class="col-md-12 text-center">
+              <button class="btn btn-primary w-50" id="applyResize">Apply Resize</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT - PREVIEW -->
+        <div class="col-md-6">
+          <h4 class="fw-bold mb-3">Live Preview</h4>
+
+          <div id="preview-box" class="p-3 text-center" style="min-height:300px;">
+            <p class="text-muted">Preview will appear here</p>
+          </div>
+
+          <!-- Download Button (Below Preview) -->
+          <button class="btn btn-success w-100 mt-3" id="downloadBtn" style="display:none;">
+            Download JPG
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- ⭐ SEO CONTENT STARTS HERE ⭐ -->
+  <div class="container py-5">
+    <h2 class="fw-bold mb-3">How to Use Image Crop & Resize Tool</h2>
+    <p>This free online image editor allows you to crop, resize and download images instantly. No signup or software installation required.</p>
+
+    <h4 class="mt-4">Step-by-Step Guide:</h4>
+    <ol>
+      <li>Click the <b>Upload</b> button and select an image.</li>
+      <li>Use the 8 big crop handles to adjust the crop area.</li>
+      <li>Move and zoom the image freely inside the 400×400 editor box.</li>
+      <li>Click the <b>Apply Resize</b> button to generate the preview.</li>
+      <li>Click <b>Download JPG</b> to save your edited image.</li>
+    </ol>
+
+    <h2 class="fw-bold mt-5 mb-3">Who Can Use This Tool?</h2>
+    <p>This tool is useful for everyone who edits images regularly:</p>
+    <ul>
+      <li>Students creating project images</li>
+      <li>Designers editing profile pictures</li>
+      <li>Business owners making product photos</li>
+      <li>Photographers quick cropping work</li>
+      <li>YouTubers & Instagram creators</li>
+    </ul>
+
+    <h2 class="fw-bold mt-5 mb-3">Features of This Image Crop & Resize Tool</h2>
+    <ul>
+      <li>Simple & user-friendly interface</li>
+      <li>Crop using 8 large control points</li>
+      <li>400×400 editing workspace</li>
+      <li>300×300 image containment for easy cropping</li>
+      <li>Live preview before download</li>
+      <li>No watermark</li>
+      <li>Works on mobile & desktop</li>
+    </ul>
+
+    <h2 class="fw-bold mt-5 mb-3">Why Choose Our Free Image Editor?</h2>
+    <p>Most online crop tools include ads or watermarks. Our tool is clean, fast, and 100% free for life. Everything runs inside your browser — your images never leave your device.</p>
+
+    <h2 class="fw-bold mt-5 mb-3">FAQ – Frequently Asked Questions</h2>
+
+    <h5>1. Is this tool completely free?</h5>
+    <p>Yes, it is 100% free and always will be.</p>
+
+    <h5>2. Are my images stored on your server?</h5>
+    <p>No. Everything happens in your browser for maximum privacy.</p>
+
+    <h5>3. Does it work on mobile?</h5>
+    <p>Yes, it works perfectly on Android and iPhone.</p>
+
+    <h5>4. Can I crop for Instagram/YouTube?</h5>
+    <p>Yes, you can crop photos for any social media platform.</p>
+
+    <h5>5. Can I resize to custom dimensions?</h5>
+    <p>Yes, you can manually set width & height.</p>
+
+  </div>
+  <!-- ⭐ SEO CONTENT ENDS HERE ⭐ -->
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3 mt-5" style="font-size: 14px; color: #555;">
+    <p class="mb-0">
+      © <span id="year"></span> All Rights Reserved • Designed by
+      <a href="https://charleswebdesigner.netlify.app/" target="_blank" style="color:#007bff;">Charles</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+    const fileInput = document.getElementById("imageUpload");
+    const img = document.getElementById("editor-img");
+    const previewBox = document.getElementById("preview-box");
+    const downloadBtn = document.getElementById("downloadBtn");
+
+    let cropper;
+    let finalCanvas;
+
+    // IMAGE UPLOAD
+    fileInput.addEventListener("change", () => {
+      const file = fileInput.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        img.src = reader.result;
+        img.style.display = "block";
+
+        if (cropper) cropper.destroy();
+
+        cropper = new Cropper(img, {
+          viewMode: 1,
+          autoCropArea: 1,
+          movable: true,
+          zoomable: true,
+          scalable: true,
+          dragMode: "move"
+        });
+      };
+      reader.readAsDataURL(file);
+    });
+
+    // APPLY RESIZE
+    document.getElementById("applyResize").onclick = () => {
+      if (!cropper) return;
+
+      const width = parseInt(document.getElementById("widthInput").value);
+      const height = parseInt(document.getElementById("heightInput").value);
+
+      finalCanvas = cropper.getCroppedCanvas({
+        width: width || undefined,
+        height: height || undefined
+      });
+
+      previewBox.innerHTML = `<img src="${finalCanvas.toDataURL()}">`;
+      downloadBtn.style.display = "block";
+    };
+
+    // DOWNLOAD IMAGE
+    downloadBtn.onclick = () => {
+      const canvas = finalCanvas || cropper.getCroppedCanvas();
+      const link = document.createElement("a");
+      link.download = "edited-image.jpg";
+      link.href = canvas.toDataURL("image/jpeg");
+      link.click();
+    };
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
