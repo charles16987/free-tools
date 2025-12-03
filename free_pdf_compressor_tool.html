@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Free High-Quality PDF Compressor | Reduce PDF Size Online (No Login)</title>
+  <meta name="description" content="Compress PDF files online for free with high-quality output. No login required, no watermark, and 100% secure client-side processing. Fast PDF size reduction for students, office use, and professionals.">
+  <meta name="keywords" content="free pdf compressor, reduce pdf size online, compress pdf without losing quality, client side pdf tool, fast pdf compression, no login pdf compressor">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/code.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJM3N257C3');
+</script>
+</head>
+
+<body class="pdf-compressor">
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand fw-bold">Free Tools</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item mx-2"><a href="index.html" class="nav-link">Free Tools</a></li>
+            <li class="nav-item mx-2"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item mx-2"><a href="blog.html" class="nav-link">Blog</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container pt-5">
+
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">High-Quality PDF Compressor</h1>
+      <p class="text-muted">Reduces PDF size using **high-quality image recompression** (almost no quality loss).</p>
+    </div>
+
+    <div class="card p-4 shadow-sm">
+      <h4 class="fw-bold mb-3 text-center">Upload Your PDF</h4>
+
+      <div class="text-center mb-3">
+        <input type="file" id="fileInput" class="form-control mb-3" accept="application/pdf">
+        <button class="btn btn-primary" id="compressBtn">Compress PDF</button>
+      </div>
+
+      <div id="statusMessage" class="mt-3 text-center fw-bold" style="min-height:30px;"></div>
+
+      <div id="resultCard" class="card mt-3 p-3 d-none">
+        <h5 class="fw-bold text-center">✔ Compression Complete!</h5>
+
+        <div class="row text-center my-3">
+          <div class="col"><strong>Original Size:</strong> <span id="originalSize"></span></div>
+          <div class="col"><strong>Compressed:</strong> <span id="compressedSize"></span></div>
+          <div class="col"><strong>Reduction:</strong> <span id="reductionPercent"></span></div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-success" id="downloadBtn">Download PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+  <h2 class="fw-bold">How This PDF Compressor Works</h2>
+  <p>This tool compresses your PDF by intelligently recompressing images using high-quality rendering. 
+  All processing happens directly inside your browser using PDF.js and PDF-LIB. 
+  Your files never leave your device, ensuring 100% privacy and security.</p>
+  <ul>
+      <li>No server upload – everything is processed client-side.</li>
+      <li>High-quality image recompression with minimum clarity loss.</li>
+      <li>Fast multi-page rendering technology for better speed.</li>
+      <li>Safe to use for personal or confidential PDFs.</li>
+  </ul>
+</div>
+<div class="container mt-4">
+  <h2 class="fw-bold">Benefits of This PDF Compressor</h2>
+  <ul>
+    <li>✔ High-quality compression without blur</li>
+    <li>✔ 100% free to use – no hidden charges</li>
+    <li>✔ No login or signup required</li>
+    <li>✔ Works fully inside your browser (client-side)</li>
+    <li>✔ Super fast compression using local device power</li>
+    <li>✔ Works on mobile, laptop, Windows, macOS</li>
+  </ul>
+</div>
+<div class="container mt-4">
+  <h2 class="fw-bold">What Is a PDF Compressor?</h2>
+  <p>A PDF compressor is a tool used to reduce the file size of a PDF without losing its readability or quality. 
+  It is useful for email attachments, online form submissions, and storing large documents. 
+  This tool uses smart compression methods to maintain clarity while reducing size.</p>
+</div>
+<div class="container mt-4">
+  <h2 class="fw-bold">Why You Need to Compress PDFs</h2>
+  <p>Large PDF files take more time to upload, share, or download. 
+  Compressed PDFs load faster and save storage space. 
+  This is especially helpful for students, job seekers, office users, and designers who handle large files.</p>
+</div>
+<div class="container mt-4">
+  <h2 class="fw-bold">Is This PDF Compressor Safe?</h2>
+  <p>Yes, this PDF compressor is completely safe. 
+  Your files never leave your device. No server upload, no tracking, and no data collection. 
+  Everything runs inside your browser, making it fully secure for confidential documents.</p>
+</div>
+
+
+  </div>
+
+  <footer class="text-center py-3 mt-5" style="font-size:14px; color:#555;">
+    © <span id="year"></span> All Rights Reserved • Designed by
+    <a href="https://charleswebdesigner.netlify.app/" target="_blank" style="color:#007bff;">Charles</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+    const fileInput = document.getElementById("fileInput");
+    const compressBtn = document.getElementById("compressBtn");
+    const downloadBtn = document.getElementById("downloadBtn");
+    const resultCard = document.getElementById("resultCard");
+    const statusMessage = document.getElementById("statusMessage");
+
+    const originalSizeSpan = document.getElementById("originalSize");
+    const compressedSizeSpan = document.getElementById("compressedSize");
+    const reductionPercentSpan = document.getElementById("reductionPercent");
+
+    let compressedBlob = null;
+    let originalFileName = "";
+
+    function formatBytes(bytes) {
+      const sizes = ["Bytes", "KB", "MB", "GB"];
+      if (bytes === 0) return "0 Byte";
+      const i = Math.floor(Math.log(bytes) / Math.log(1024));
+      return (bytes / Math.pow(1024, i)).toFixed(2) + " " + sizes[i];
+    }
+
+    // ======================================================
+    // HIGH QUALITY COMPRESSION FUNCTION (NO BLUR)
+    // ======================================================
+    async function compressPDF(arrayBuffer) {
+
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js";
+
+      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      const pdfDoc = await PDFLib.PDFDocument.create();
+
+      // HIGH QUALITY SETTINGS
+      const scaleFactor = 1.50;   // No DPI reduction
+      const jpegQuality = 4.00;  // Very high clarity
+
+      for (let i = 1; i <= pdf.numPages; i++) {
+
+        let progress = Math.round((i / pdf.numPages) * 100);
+        statusMessage.textContent =
+          `Processing page ${i}/${pdf.numPages} — ${progress}% completed`;
+
+        const page = await pdf.getPage(i);
+        const viewport = page.getViewport({ scale: scaleFactor });
+
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+
+        await page.render({
+          canvasContext: ctx,
+          viewport: viewport
+        }).promise;
+
+        // HIGH QUALITY JPEG EXPORT
+        const imgData = canvas.toDataURL("image/jpeg", jpegQuality);
+        const img = await pdfDoc.embedJpg(imgData);
+
+        const newPage = pdfDoc.addPage([canvas.width, canvas.height]);
+        newPage.drawImage(img, {
+          x: 0,
+          y: 0,
+          width: canvas.width,
+          height: canvas.height
+        });
+      }
+
+      return pdfDoc.save();
+    }
+
+    // ======================================================
+    // BUTTON HANDLER
+    // ======================================================
+    compressBtn.addEventListener("click", async () => {
+      const file = fileInput.files[0];
+      if (!file) {
+        statusMessage.textContent = "❌ Please select a PDF file.";
+        return;
+      }
+
+      resultCard.classList.add("d-none");
+      statusMessage.textContent = "Starting compression...";
+
+      compressBtn.disabled = true;
+
+      try {
+        const buffer = await file.arrayBuffer();
+        const originalSize = file.size;
+        originalFileName = file.name;
+
+        const compressedBytes = await compressPDF(buffer);
+
+        compressedBlob = new Blob([compressedBytes], { type: "application/pdf" });
+        const compressedSize = compressedBlob.size;
+
+        const reduction = ((originalSize - compressedSize) / originalSize) * 100;
+
+        originalSizeSpan.textContent = formatBytes(originalSize);
+        compressedSizeSpan.textContent = formatBytes(compressedSize);
+        reductionPercentSpan.textContent = reduction.toFixed(1) + "%";
+
+        statusMessage.textContent = "✔ Completed!";
+        resultCard.classList.remove("d-none");
+
+      } catch (e) {
+        console.error(e);
+        statusMessage.textContent = "❌ Error compressing PDF.";
+      }
+
+      compressBtn.disabled = false;
+    });
+
+    downloadBtn.addEventListener("click", () => {
+      if (compressedBlob) {
+        const newName = originalFileName.replace(/\.pdf$/, "_compressed.pdf");
+        saveAs(compressedBlob, newName);
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

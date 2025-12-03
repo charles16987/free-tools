@@ -22,5 +22,9 @@
 .container.pt-5 {
     padding-top: 100px !important;
 }
+.pdf-compressor .card.p-4 {
+    padding: 15px 15px !important;
+    padding-bottom: 0 !important;
+}
 }
 	
