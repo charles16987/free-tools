@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- ⭐ SEO TITLE ⭐ -->
+  <title>Bulk Image Renamer – SEO-Friendly Image File Renaming Tool</title>
+  <meta name="description"
+    content="Bulk rename up to 20 images instantly using SEO-friendly filenames. Add keywords automatically and download renamed files. 100% free online tool.">
+
+  <!-- ⭐ KEYWORDS ⭐ -->
+  <meta name="keywords"
+    content="bulk image renamer, seo image rename, rename images online, file rename tool, batch photo renamer, free tools, online tools">
+
+  <!-- ⭐ CANONICAL URL ⭐ -->
+  <link rel="canonical" href="https://freeonlinetoolsbox.pages.dev/image_renamer_online_free_tool">
+
+  <!-- ⭐ OPEN GRAPH – FACEBOOK / WHATSAPP / LINKEDIN ⭐ -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bulk Image Renamer – SEO-Friendly Image File Renaming Tool">
+  <meta property="og:description"
+        content="Bulk rename up to 20 images instantly with SEO keywords. Free browser-based renaming tool.">
+  <meta property="og:url" content="https://freeonlinetoolsbox.pages.dev/image_renamer_online_free_tool">
+  <meta property="og:image" content="#">
+
+  <!-- ⭐ TWITTER CARD ⭐ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bulk Image Renamer – Free Online SEO File Renamer">
+  <meta name="twitter:description" 
+        content="Rename images in bulk with SEO-friendly filenames. Free, fast, no upload needed.">
+  <meta name="twitter:image" content="#">
+
+  <!-- ⭐ EXTRA SEO TAGS ⭐ -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Charles Web Designer">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+
+  <!-- ⭐ SECURITY BEST PRACTICES ⭐ -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <!-- ⭐ FAVICON ⭐ -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/code.png" />
+
+  <!-- ⭐ CSS ⭐ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+
+  <!-- ⭐ JS LIBS ⭐ -->
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+  <!-- ⭐ GOOGLE ANALYTICS ⭐ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJM3N257C3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QJM3N257C3');
+  </script>
+
+  <!-- ⭐ JSON-LD SCHEMA ⭐ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebApplication",
+    "name": "Bulk Image Renamer",
+    "url": "https://freeonlinetoolsbox.pages.dev/image_renamer_online_free_tool",
+    "image": "#",
+    "applicationCategory": "Utility",
+    "operatingSystem": "All",
+    "description": "Rename multiple images instantly using SEO-friendly filenames. Free online bulk image renamer.",
+    "author": {
+      "@type": "Person",
+      "name": "Charles Web Designer"
+    }
+  }
+  </script>
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand fw-bold">Free Tools</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item mx-2"><a href="index.html" class="nav-link menu-click">Free Tools</a></li>
+            <li class="nav-item mx-2"><a href="about.html" class="nav-link menu-click">About</a></li>
+            <li class="nav-item mx-2"><a href="blog.html" class="nav-link menu-click">Blog</a></li>
+          </ul>
+          <div>
+            <a href="contact.html" class="btn btn-outline-light menu-click">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container pt-5">
+
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Bulk Image Renamer (SEO Renamer)</h1>
+      <p class="text-muted">Upload up to **20 images** and rename them instantly for better **Image SEO**.</p>
+    </div>
+
+    <div class="card p-4 shadow-sm">
+      <h4 class="fw-bold mb-3 text-center">Rename Your Images for SEO</h4>
+
+      <div class="row g-3">
+        <div class="col-12">
+          <label for="keywordInput" class="form-label fw-bold">1. Enter Your SEO Keyword/Phrase:</label>
+          <input type="text" id="keywordInput" class="form-control" placeholder="e.g., blue-running-shoes">
+          <div class="form-text">Use dashes or underscores to separate words. This will be the new file base name.</div>
+        </div>
+        <div class="col-12">
+          <label for="fileInput" class="form-label fw-bold">2. Upload Images (Max 20):</label>
+          <input type="file" id="fileInput" class="form-control"
+            accept="image/jpeg,image/png,image/webp,image/gif" multiple>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary mt-3" id="processBtn" disabled>Process Images</button>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <h5 class="fw-bold mb-3">Renaming Results</h5>
+      <div id="results" class="row row-cols-1 g-3">
+        <div class="col" id="initialMessage">
+          <p class="text-center text-muted">Upload images and click 'Process Images' to see the new filenames here.</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+         <button class="btn btn-success" id="downloadAllBtn" disabled>Download All Renamed Files (ZIP)</button>
+      </div>
+
+    </div>
+
+    <div class="mt-5">
+      <h2 class="fw-bold">Addressing the User Pain Point: Why This Tool?</h2>
+      <p>Standard image filenames (like `IMG_1234.jpg`) are bad for SEO. They don't tell search engines what the image is about. Manually renaming dozens of files is tedious and error-prone.</p>
+      <p>This tool solves that by:</p>
+      <ul>
+        <li>**Automation:** Renaming up to 20 files in one click.</li>
+        <li>**SEO Focus:** Enforcing a **keyword-dash-number** format (e.g., `blue-running-shoes-1.jpg`).</li>
+        <li>**Security:** All renaming happens **100% in your browser**—no file upload to a server.</li>
+      </ul>
+    </div>
+
+    <div class="mt-5">
+      <h2 class="fw-bold">How to Use This Image Renamer</h2>
+      <ol>
+        <li>**Enter a target keyword/phrase** for your images (e.g., `best-laptop-deals`).</li>
+        <li>Select up to **20 images** using the file selector.</li>
+        <li>Click **Process Images** to see the renamed list.</li>
+        <li>Click **Download All Renamed Files (ZIP)** to save the batch to your computer.</li>
+      </ol>
+    </div>
+
+    <div class="mt-5 mb-5">
+      <h2 class="fw-bold">Key Features & Benefits</h2>
+      <ul>
+        <li>**In-Browser Processing:** Maximum privacy and speed. Files never leave your device.</li>
+        <li>**SEO Optimization:** Enforces best practices for image filenames.</li>
+        <li>**Batch Processing:** Rename up to **20 images** simultaneously.</li>
+        <li>**Clear Workflow:** Separate buttons for processing and downloading.</li>
+        <li>**Free and Simple:** No cost, no signup, and a clean interface.</li>
+      </ul>
+    </div>
+
+    <div class="mt-5 mb-5">
+      <h2 class="fw-bold">Frequently Asked Questions</h2>
+
+      <h4 class="mt-3">1. How does SEO-friendly renaming work?</h4>
+      <p>Search engines prefer descriptive filenames with keywords separated by dashes. We automatically convert your original filename (e.g., `IMG001.jpg`) to your keyword + a sequential number (e.g., `your-keyword-1.jpg`).</p>
+
+      <h4 class="mt-3">2. Are my images safe?</h4>
+      <p>Absolutely. Your images never leave your device. All renaming happens inside your web browser using JavaScript, ensuring **100% privacy and security**.</p>
+
+      <h4 class="mt-3">3. Can I rename more than 20 images?</h4>
+      <p>The current limit is **20 images** per batch to ensure fast, stable, and browser-friendly performance. You can run the tool multiple times for larger batches.</p>
+    </div>
+
+
+  </div>
+
+  <footer class="text-center py-3 mt-5" style="font-size: 14px; color: #555;">
+    <p class="mb-0">
+      © <span id="year"></span> All Rights Reserved •
+      Designed by
+      <a href="https://charleswebdesigner.netlify.app/" target="_blank" style="color:#007bff;">
+        Charles
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+    const keywordInput = document.getElementById('keywordInput');
+    const fileInput = document.getElementById('fileInput');
+    const processBtn = document.getElementById('processBtn');
+    const downloadAllBtn = document.getElementById('downloadAllBtn');
+    const resultsDiv = document.getElementById('results');
+    const initialMessage = document.getElementById('initialMessage');
+
+    // Array to hold the renamed files (Blobs) for the ZIP download
+    let renamedFiles = [];
+    let downloadFileName = '';
+
+    // Enable/Disable the main button based on inputs
+    const checkInputs = () => {
+      const keyword = keywordInput.value.trim();
+      const filesCount = fileInput.files.length;
+      processBtn.disabled = !(keyword && filesCount > 0);
+      downloadAllBtn.disabled = true; // Always disable download button until processed
+    };
+
+    keywordInput.addEventListener('input', checkInputs);
+    fileInput.addEventListener('change', checkInputs);
+
+
+    // ⭐ PROCESS (RENAME) LOGIC ⭐
+    processBtn.addEventListener('click', async () => {
+      const keyword = keywordInput.value.trim();
+      // 🟢 CHANGE: Limit updated to 20
+      const files = Array.from(fileInput.files).slice(0, 20);
+
+      if (!keyword || !files.length) {
+        alert("Please enter a keyword and select up to 20 images.");
+        return;
+      }
+
+      // 1. Sanitize keyword for filename use
+      const baseName = keyword
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/[\s-]+/g, '-');
+
+      if (!baseName) {
+        alert("The keyword resulted in an empty filename. Please use letters and numbers.");
+        return;
+      }
+
+      resultsDiv.innerHTML = ''; // Clear previous results
+      initialMessage.style.display = 'none';
+      renamedFiles = []; // Clear previous array
+      downloadFileName = `${baseName}-seo-images.zip`;
+
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        // Get the original extension (e.g., .jpg, .png)
+        const parts = file.name.split('.');
+        const extension = parts.length > 1 ? '.' + parts.pop().toLowerCase() : '';
+
+        // Create the new SEO-friendly name
+        const newFileName = `${baseName}-${i + 1}${extension}`;
+
+        // Read the file content as a blob
+        const blob = await new Promise(resolve => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(new Blob([reader.result], { type: file.type }));
+          reader.readAsArrayBuffer(file);
+        });
+        
+        // Store the renamed file data (Blob + new Name)
+        renamedFiles.push({ name: newFileName, blob: blob });
+
+        // 2. Display the text-based result (No Image Preview)
+        const col = document.createElement('div');
+        col.className = "col";
+        col.innerHTML = `
+          <div class="card p-3 bg-light border-success">
+            <p class="mb-0"><strong>Original:</strong> ${file.name}</p>
+            <p class="mb-0 text-success"><strong>New Name:</strong> ${newFileName}</p>
+          </div>
+        `;
+        resultsDiv.appendChild(col);
+      }
+      
+      // 3. Enable the Download All button
+      downloadAllBtn.disabled = false;
+      downloadAllBtn.textContent = `Download All ${renamedFiles.length} Files as ZIP`;
+      alert(`Successfully processed ${renamedFiles.length} images. Click the 'Download All' button to save them.`);
+    });
+
+
+    // ⭐ DOWNLOAD ALL AS ZIP LOGIC ⭐
+    downloadAllBtn.addEventListener('click', async () => {
+      if (!renamedFiles.length) return;
+      
+      const zip = new JSZip();
+      
+      // Add all stored renamed files to the ZIP
+      renamedFiles.forEach(img => {
+        zip.file(img.name, img.blob);
+      });
+      
+      // Generate the ZIP file
+      const zipBlob = await zip.generateAsync({ type: 'blob' });
+      
+      // Download the ZIP
+      saveAs(zipBlob, downloadFileName);
+
+      // Disable the button after successful download (optional)
+      downloadAllBtn.disabled = true;
+      downloadAllBtn.textContent = `Download Complete!`;
+    });
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
